@@ -6,46 +6,52 @@
     <title>Website Mockup</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body><br><br>
+<body>
     <div class="container">
         <!-- Header -->
         <div class="header">
-            <div class="logo">😊</div>
+            <div class="logo" ><img src="assets/profile.jpg" alt="" width="50" height="50"></div>
             <div class="nav-buttons">
-                <button class="nav-btn">Home</button>
-                <button class="nav-btn">Our Profile</button>
-                <button class="nav-btn">Portofolio</button>
-                <button class="nav-btn">Message Us</button>
+                <a href="#home" class="a"style="text-decoration: none;"><button class="nav-btn">Home</button></a>
+                <a href="#profile" class="a" style="text-decoration: none;"><button class="nav-btn">My Profile</button></a>
+                <a href="#message" class="a" style="text-decoration: none;"><button class="nav-btn">Message Us</button></a>
             </div>
         </div>
         
         <!-- Welcome Section -->
-        <div class="welcome">
+        <div class="welcome" id="home">
             <h1 id="welcomeText">Hi Guest, Welcome To Website</h1>
             <p>ini adalah website Latihan pertama</p>
         </div>
         
         <!-- Headquarters Section -->
-        <div class="headquarters">
-            <h2>Our Headquarter</h2>
+        <div class="headquarters" id="profile">
+            <h1>My Profile Project</h1>
+            <h2>klik pada gambar untuk melihat</h2>
             <div class="locations">
                 <div class="location">
-                    <div class="location-circle"></div>
-                    <div class="location-name">Jakarta</div>
+                    <a href="https://sman12malteng.my.id/">
+                        <img src="assets/project1.png" alt="" class="location-circle">
+                    </a>
+                    <div class="location-name">First project (Website SMA Negeri 12 Malteng)</div>
                 </div>
                 <div class="location">
-                    <div class="location-circle"></div>
-                    <div class="location-name">Bandung</div>
+                    <a href="https://achel-sahe.github.io/for-the-loml/">
+                        <img src="assets/project2.png" alt="" class="location-circle">
+                    </a>
+                    <div class="location-name">Website for my gf :D (mobile version)</div>
                 </div>
                 <div class="location">
-                    <div class="location-circle"></div>
-                    <div class="location-name">Surabaya</div>
+                    <a href="https://achel-sahe.github.io/tuhaha/">
+                        <img src="assets/project3.png" alt="" class="location-circle">
+                    </a>
+                    <div class="location-name">Website Desa (Still in development)</div>
                 </div>
             </div>
         </div>
         
         <!-- Message Section -->
-        <div class="message-section">
+        <div class="message-section" id="message">
             <div class="form-container">
                 <h2>Message Us</h2>
                 <form id="messageForm">
